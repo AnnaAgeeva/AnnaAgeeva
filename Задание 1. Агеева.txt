@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    int a=100000, b=50000, c;
+    c=a+b;
+    printf("Integer:  %d+ %d=%d\n", a, b, c);
+      float a1=10.5f, b1=1.91f, c1;
+      c1=a1-b1;
+      printf("floating:  %f\n", c1);
+        double a2, b2, c2;
+        c2=a2/b2;
+        printf("Res:  %f\n", c2);
+         short A=5, B=8, C;
+         C=A*B;
+         printf("Res1:  %d\n", C);
+    return 0;
+}
