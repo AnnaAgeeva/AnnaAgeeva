@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+int i = 0;
+while (i < 101){
+if (i % 3 == 0){
+printf   ("Задание 1: %d\n", i);
+}
+i++;
+}
+printf ("\n");
+int a = 1;
+int b = 0;
+do {
+if (a % 7 == 0){
+b = b + a;
+}
+a = a + 4;
+} while (a < 1001);
+printf ( "Задание 2: %d\n ",  b);
+return 0;
+}
