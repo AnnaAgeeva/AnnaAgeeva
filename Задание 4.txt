@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <iostream>
+#include <cstring>
+using namespace std ;
+
+
+int main () {
+  int value;
+  char nameArr[10][15] = { "ноль","один","два","три","четыре","пять","шесть","семь","восемь","девять"};
+
+  cout << "Введите число от 0 до 9: " << "\n";
+  cin >> value;
+  if (value > 9 or value < 0) {
+    cout << "Ошибка" << "\n";
+    return 0;
+  }
+  cout << "Вы ввели число - " << nameArr[value] <<"\n";
+  char str[100];
+    cout << "Введите строку: ";
+    cin >> str;
+    for (int i = 0; i < strlen(str); i++) {
+        cout << char (str[i] + 1); 
+  return 0;
+}
+}
