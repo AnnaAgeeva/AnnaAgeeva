@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+
+int main () {
+
+  char string[]="PostavtePliz "; 
+  int lenght=strlen(string); //возвращаем длину строки
+  int temp, i, j; //задаем переменные
+  for ( i=0,j=lenght-1; i<j;i++, j--) // начало, конец строки и условия
+  {
+    temp = string[i]; //перемещаем одно в другое 1
+    string[i]=string[j]; //2
+    string[j]=temp;// 3
+  }
+  cout << string << "\n";
+  return 0;
+
+
+
+}
