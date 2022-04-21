@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+double sum_squares (double a, double b)
+{
+  double result=pow(a,2)+pow(b,2);//возводим число А в степень, возводим число Б в степень, складываем
+  return result;
+
+}
+
+
+int main () {
+  double a, b;
+  cout << "Число А" <<"\n";
+  cin >> a;
+  cout << "Число Б" <<"\n";
+  cin >> b;
+  cout << "Ответ" <<"\n";
+  cout << sum_squares(a, b) <<"\n";
+  return 0;
+  }
