@@ -1,0 +1,18 @@
+#include <iostream>
+
+
+using namespace std;
+
+  float SquaredSum(float a,float b) {
+      return ((a+b)*(a+b));
+  }
+  int main()
+{
+    float a,b;
+    cout<< "Ввод чисел:"<< "\n";
+  cin >> a;
+  cin >> b;
+  cout << "Квадрат суммы1:"<< SquaredSum(a,b) << "\n";
+ cout <<"Квадрат суммы2:"<< SquaredSum(a,-b) << "\n";
+    return 0;
+}
