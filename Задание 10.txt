@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+
+void sort(int m[], int lenght) {
+
+  int i = 0;
+  while ( i<lenght -1) {
+    int j = i+1;
+    while (j<lenght) {
+      if (m[i] < m[j]) {
+        int q=m[j];
+        m[j]=m[i];
+        m[i]=q;
+      }
+      j++;
+    }
+    i++;
+  }
+}
+
+int main () {
+
+  int lenght = 10;
+  int m[lenght];
+  cout << "Введите 10 чисел" << "\n";
+
+  int i = 0;
+  while(i<lenght) {
+    cin >> m[i];
+    i++;
+  }
+  cout << "Числа в порядке убывания" << "\n";
+
+  sort(m, lenght);
+  for (int a = 0; a < lenght; a++ ) {
+    cout << m[a] ;
+    cout << "\n";
+  }
+  cout << "\n";
+  return 0;
+
+
+
+  }
