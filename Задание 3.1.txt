@@ -1,0 +1,21 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    int A;
+    int B;{
+        cout<<"Введите число A:";
+        cin>>A;
+        cout<<"Введите число B:";
+        cin>>B;
+        cout<<A*3<<"\n"<<B*3<<"\n";
+    }
+ofstream file("Output");
+for(A;A<B;A++) {
+    file<<A*3<<"\n"<<B*3<<"\n";
+    file.close();
+}
+return 0;
+}
